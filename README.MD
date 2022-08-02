@@ -8,13 +8,13 @@
 
 - crie uma pasta na raiz chamada `www`
 
-- clone seu projeto laravel dentro de `www`
+- clone seu projeto laravel dentro da pasta `www`
 
 ## Importação do banco de dados
 
 - crie uma pasta na raiz chamada `dbdump`
 
-- crie um dump.sql dentro a pasta `dbdump`
+- coloque seu dump dentro da pasta `dbdump` e renomeie-o para `dump.sql`
 
 ## Subindo o ambiente
 
