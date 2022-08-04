@@ -14,7 +14,7 @@
 
 - crie um arquivo `dump.sql` dentro da pasta `mariadb` ou `pgsql` dependendo do seu dump
 
-## Subindo o ambiente com banco especifico
+## Subindo o ambiente com banco específico
 
 - basta executar o comando no terminal `bash run.sh [db_option]` as opções são: `mariadb`, `pgsql`
 
@@ -25,6 +25,8 @@ $ bash run.sh pgsql
 ```
 
 ## Subindo o ambiente com docker-compose
+
+- Essa opção é somente para quem não deseja subir o banco específico
 
 basta executar o comando:
 
