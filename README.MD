@@ -12,13 +12,21 @@
 
 ## Importação do banco de dados
 
-- crie uma pasta na raiz chamada `dbdump`
+- crie um arquivo `dump.sql` dentro da pasta `mariadb` ou `pgsql` dependendo do seu dump
 
-- coloque seu dump dentro da pasta `dbdump` e renomeie-o para `dump.sql`
+## Subindo o ambiente com banco especifico
 
-## Subindo o ambiente
+- basta executar o comando no terminal `bash run.sh [db_option]` as opções são: `mariadb`, `pgsql`
 
-Basta rodar o seguinte comando para subir a rede de contêineres docker:
+exemplo com postgres:
+
+```shell
+$ bash run.sh pgsql
+```
+
+## Subindo o ambiente com docker-compose
+
+basta executar o comando:
 
 ```shell
 $ docker-compose up -d

@@ -34,22 +34,6 @@ services:
       backend:
         aliases:
           - pgsqldb
-  mariadb:
-    image: mariadb:10.0.30
-    environment:
-      MYSQL_DATABASE: db
-      MYSQL_USER: dbuser
-      MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: root
-    volumes:
-      - ./mariadb/dump.sql:/tmp/dump/dump.sql
-      - ./mariadb:/docker-entrypoint-initdb.d
-    ports:
-      - "3306:3306"
-    networks:
-      backend:
-        aliases:
-          - mariadb
 networks:
   backend:
     name: apachenetwork
